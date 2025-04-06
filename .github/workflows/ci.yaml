@@ -30,4 +30,6 @@ jobs:
         type=sha,suffix=-${{ matrix.release }}
         type=raw,value=${{ matrix.release }}
         type=raw,value=${{ matrix.release }}-{{date 'X'}}
+      build-args: |
+        RELEASE=${{ matrix.release }}
       push: ${{ github.event_name == 'push' }}
