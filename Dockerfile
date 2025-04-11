@@ -1,4 +1,4 @@
-FROM ghcr.io/vexxhost/ubuntu:edge@sha256:f4eb35289a819d404c758d9423db6fbc8e8912110957815fd70c8e71e0cd0ad1
+FROM ghcr.io/vexxhost/ubuntu:edge@sha256:42ad7fa6cc255d5c4212d49f9d3193a6448ce8acfe0937738b5753a2c8159a7a
 COPY trusted.gpg.d/ubuntu-cloud-keyring.gpg /etc/apt/trusted.gpg.d/ubuntu-cloud-keyring.gpg
 ARG RELEASE
 COPY <<EOF /etc/apt/sources.list.d/cloudarchive.list
