@@ -16,7 +16,7 @@ jobs:
       packages: write
       pull-requests: write
     steps:
-      - uses: vexxhost/docker-atmosphere/.github/actions/build-image@f9beb2976a2cbd2b83f7d49b2a1fcbf718205314 # main
+      - uses: vexxhost/docker-atmosphere/.github/actions/build-image@2bed598442494c60f1f9ae004626473f7c400bf7 # main
         with:
           image-name: ubuntu-cloud-archive
           push: ${{ github.event_name != 'pull_request' }}
