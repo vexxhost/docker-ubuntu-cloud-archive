@@ -25,7 +25,7 @@ jobs:
         with:
           egress-policy: audit
 
-      - uses: vexxhost/docker-atmosphere/.github/actions/build-image@2bed598442494c60f1f9ae004626473f7c400bf7 # main
+      - uses: vexxhost/docker-atmosphere/.github/actions/build-image@5923a8fba3a98cf17e36583cc498d5e70a01c482 # main
         with:
           image-name: ubuntu-cloud-archive
           push: ${{ github.event_name != 'pull_request' }}
